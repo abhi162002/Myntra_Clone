@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title Myntra Store 
+    style
+      include ../static/style.css
+  body
+    navbar#nav 
+      ul
+        div#logo
+          img(src="/static/myntra_logo.jpeg")
+        li #[a(href="/") MEN]
+        li #[a(href="/") WOMEN]
+        li #[a(href="/") KIDS]
+        li #[a(href="/") HOME & LIVING]
+        li #[a(href="/") BEAUTY]
+        li #[a(href="/") STUDIO]
+      div#search
+        input(type="text" name="search" placeholder="Search for products and more")
+        img(src="/static/search.png")
+
+    section#adSection
+      div.images 
+      
+    section#dealsSection
+      div.write 
+        div#ethnic ETHNIC
+        div#wear WEARS
+      div.deals
+        div#deal1
+        div#deal2
+        div#deal3
+        div#deal4
+
+    section#westernclub
+      div.write 
+        div#western WESTERN
+        div#club CLUB
+      div.clubs
+        div#club1
+        div#club2
+        div#club3
+        div#club4
+    
+    footer#footer 
+      p Copyright © 2022 Myntra.com | All rights reserved

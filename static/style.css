@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#nav{
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background: white;
+    z-index: 2;
+}
+
+#logo{
+    height: 50px;
+    cursor: pointer;
+}
+
+#logo img{
+    margin: 7px 45px;
+    margin-right: 4px;
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+}
+
+#logo img:hover{
+    height: 60px;
+    width: 60px;
+}
+
+#nav ul{
+    display: flex;
+    flex-direction: row;
+    padding: 12px 0px;
+    height: 50px;
+}
+
+#nav ul li{
+    margin: 12px 10px;
+    padding: 9px 5px;
+    list-style: none;
+}
+
+#nav ul li a{
+    margin: 17px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+#nav ul li a:hover{
+    font-weight: bold;
+}
+
+#search{
+    display: flex;
+    border-radius: 7px;
+    background: lightgrey;
+    width: 250px;
+    margin: 37px 50px;
+    margin-top: 20px;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#search input{
+    outline: none;
+    height: 45px;
+    width: 240px;
+    margin: 0px 0px;
+    margin-right: 33px;
+    padding: 1px;
+    border: 2px solid lightgrey;
+    background: lightgrey;
+}
+
+#search img{
+    width: 17px;
+    height: 15px;
+    margin: 0px 5px;
+}
+
+
+/* ADVERTISEMENT  */
+#adSection{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.images{
+    height: 498px;
+    width: 100%;
+    overflow: hidden;
+    background: url('/static/store.jpg') center center/cover no-repeat;
+    animation: imageslider 50s infinite ease-out;
+}
+@keyframes imageslider {
+    0%{background: url('/static/store.jpg') center center/cover no-repeat;}
+    25%{background: url('/static/sherwani.jpeg') center center/cover no-repeat;}
+    50%{background: url('/static/raymond.jpeg') center center/cover no-repeat;}
+    75%{background: url('/static/ajio.jpeg') center center/cover no-repeat;}
+}
+
+.offers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    height: 70px;
+    width: 100%;
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    box-shadow: 1px 2px 10px 11px rgb(195, 170, 237);
+}
+
+
+/* BEST DEALS  */
+#dealsSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 450px;
+    width: 100%;
+    margin-top: 45px;
+    align-items: center;
+}
+
+.write{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    cursor: pointer;
+}
+.write:hover{
+    transform: scale(1.1);
+    transition: transform .6s ease;
+    font-size: bolder;
+}
+#ethnic{
+    color: #FF9933;
+    margin: 5px 18px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+#wear{
+    color: #138808;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.deals{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    background: #FF9933;
+}
+#deal1{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    background: url('/static/ethnic1.jpeg') center center/cover no-repeat;
+}
+#deal1:hover{
+    transform: scale(1.05);
+    transition: transform .6s ease;
+}
+#deal2{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    background: url('/static/ethnic2.jpeg') center center/cover no-repeat;
+}
+#deal2:hover{
+    transform: scale(1.05);
+    transition: transform .6s ease;
+}
+#deal3{
+    cursor: pointer;
+    background: url('/static/etnic3131.jpeg') center center/cover no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+}
+#deal3:hover{
+    transform: scale(1.05);
+    transition: transform .6s ease;
+}
+#deal4{
+    cursor: pointer;
+    background: url('/static/ethnic4.jpeg') center center/cover no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+}
+#deal4:hover{
+    transform: scale(1.05);
+    transition: transform .6s ease;
+}
+
+/*BUDGET SECTION*/
+#westernclub{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    width: 100%;
+    margin-top: 50px;
+    font: 1.5rem sans-serif;
+}
+#western{
+    color: #FF9933;
+    margin: 5px 18px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+#club{
+    color: #138808;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.clubs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    background: #FF9933;
+}
+#club1{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    background: url('/static/west1.jpeg') center center/cover no-repeat;
+}
+#club1:hover{
+    transform: scale(1.05);
+    transition: transform .6s ease;
+}
+#club2{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    background: url('/static/west2.jpeg') center center/cover no-repeat;
+}
+#club2:hover{
+    transform: scale(1.05);
+    transition: transform .6s ease;
+}
+#club3{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    background: url('/static/west33.jpeg') center center/cover no-repeat;
+}
+#club3:hover{
+    transform: scale(1.05);
+    transition: transform .6s ease;
+}
+#club4{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    background: url('/static/west4.jpeg') center center/cover no-repeat;
+}
+#club4:hover{
+    transform: scale(1.05);
+    transition: transform .6s ease;
+}
+
+/* Footer Section */
+#footer{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 100px;
+    font-size: 22px;
+    text-align: center;
+}
